@@ -2,10 +2,10 @@ import '../App.css'
 import React, { useState } from "react";
 
 const Questions = ({ isShowQuestions ,email, question}) => {
-    const [scroll, setScroll] = useState(-1); 
+    const [scroll, setScroll] = useState(0); 
     const [selectedOption, setSelectedOption] = useState(null);
     const [checkPoint, setCheckPoint] = useState(null);
-    const [checkButton, setCheckButton] = useState(null);
+    const [checkButton, setCheckButton] = useState(true);
 
     const handleOptionChange = (event, isTrue) => {
         setSelectedOption(event.target.value);

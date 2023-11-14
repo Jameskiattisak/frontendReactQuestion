@@ -22,7 +22,7 @@ function EmailValidate() {
                 });
             setIsShowQuestions(true)
         }
-        alert("email is " + checkEmail);
+        checkEmail ? alert("Email is Valid") : alert("Email is Invalid")
     }
 
     return (
